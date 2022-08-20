@@ -16,14 +16,14 @@ jobs:
     - name: Set Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+        aws-access-key-id: ${{ ASIAVXSNWAAJOGSOOZXX }}
+        aws-secret-access-key: ${{ J2PZx5dHC5bIoWAKB1L6IYUPUAtjha+1P/AQBzZv }}
+        aws-session-token: ${{FwoGZXIvYXdzENX//////////wEaDGzdXhtjpi+1xHSW3CLAAQcpbHC5px8SM4Tpoqch4kaP8+e1ZxW45Zg/uF3iHxW7sWVSgaTsK+jc5+QGxhXmfgdZVQo850XlsVySUOdl4H24pY5hzt54fCekFbgfQi+fNLNH7pAVkf8iP0+7x2Eg2sWwODXfRVC3nuAGvHVp3+zYF6C1hJS43d5djTapDc5IjpHRsxjF7CP/zxYVQDr+NTFhWp0yLYsCFhT+NfY8qerPpVwJsgI2Vjc+Zx7WRbjnQStl/niC+ovID0ckTif+USjYooGYBjItt59WDuQSH2pRQLmc7j9aEuyLlTVMcG64rJ4+QQH9vbsTrXtbrO7nmIraXvXK }}
         aws-region: us-east-1
 
     - name: Deploy objects to S3 bucket
       run: |
-        aws s3 sync ./ s3://Bucket-Name \
+        aws s3 sync ./ s3://celestials \
         --exclude '.git/*' \
         --exclude '.github/*' \
         --exclude 'README.md' \
