@@ -16,9 +16,9 @@ jobs:
     - name: Set Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ ASIAVXSNWAAJDKWKSSF5 }}
-        aws-secret-access-key: ${{ QpjlSbgW9KwyJ382xmckBIJzNPPAR8xaiZ3bfxPM }}
-        aws-session-token: ${{ FwoGZXIvYXdzEBAaDC+pOAS9z9kxqPZr+CLAAWb9PZel5BpEFcYE1CeCdyyqBEPeBiTX6XITapfBtXyl3lbsERmlHhi7sAUyakNhuZnQKOIFMc7oQSUD3p3KBgBYsilDp0DA86QvysPHd15ddvSVHw5167y5zzolDs9hXVQWsS0xpwLjG3K42p7RorzOfDd3yfRMYk5Yd4zwsA/OpdO4hpQApt+xCa+rqA2a4H4S3rtoIupqHjgkAA6BFf4GeKB+ChlAY9UFzdT7Ch/JBLXqxSIwRq+UbvYHEiKh5iiyoI6YBjItbBw6g6EogWGKV+fENfMgMQvXEgOm9M6kbJU7vItWq6m0MqNndkeKudxw8ecM }}
+       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
         aws-region: us-east-1
 
     - name: Deploy objects to S3 bucket
