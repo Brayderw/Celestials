@@ -16,9 +16,9 @@ jobs:
     - name: Set Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ ASIAVXSNWAAJOGSOOZXX }}
-        aws-secret-access-key: ${{ J2PZx5dHC5bIoWAKB1L6IYUPUAtjha+1P/AQBzZv }}
-        aws-session-token: ${{FwoGZXIvYXdzENX//////////wEaDGzdXhtjpi+1xHSW3CLAAQcpbHC5px8SM4Tpoqch4kaP8+e1ZxW45Zg/uF3iHxW7sWVSgaTsK+jc5+QGxhXmfgdZVQo850XlsVySUOdl4H24pY5hzt54fCekFbgfQi+fNLNH7pAVkf8iP0+7x2Eg2sWwODXfRVC3nuAGvHVp3+zYF6C1hJS43d5djTapDc5IjpHRsxjF7CP/zxYVQDr+NTFhWp0yLYsCFhT+NfY8qerPpVwJsgI2Vjc+Zx7WRbjnQStl/niC+ovID0ckTif+USjYooGYBjItt59WDuQSH2pRQLmc7j9aEuyLlTVMcG64rJ4+QQH9vbsTrXtbrO7nmIraXvXK }}
+        aws-access-key-id: ${{ ASIAVXSNWAAJDKWKSSF5 }}
+        aws-secret-access-key: ${{ QpjlSbgW9KwyJ382xmckBIJzNPPAR8xaiZ3bfxPM }}
+        aws-session-token: ${{ FwoGZXIvYXdzEBAaDC+pOAS9z9kxqPZr+CLAAWb9PZel5BpEFcYE1CeCdyyqBEPeBiTX6XITapfBtXyl3lbsERmlHhi7sAUyakNhuZnQKOIFMc7oQSUD3p3KBgBYsilDp0DA86QvysPHd15ddvSVHw5167y5zzolDs9hXVQWsS0xpwLjG3K42p7RorzOfDd3yfRMYk5Yd4zwsA/OpdO4hpQApt+xCa+rqA2a4H4S3rtoIupqHjgkAA6BFf4GeKB+ChlAY9UFzdT7Ch/JBLXqxSIwRq+UbvYHEiKh5iiyoI6YBjItbBw6g6EogWGKV+fENfMgMQvXEgOm9M6kbJU7vItWq6m0MqNndkeKudxw8ecM }}
         aws-region: us-east-1
 
     - name: Deploy objects to S3 bucket
